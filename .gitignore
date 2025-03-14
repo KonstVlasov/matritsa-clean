@@ -11,3 +11,12 @@
    node_modules/
    .env
    .env.*
+
+# SSH ключи и другие секретные данные
+**/.ssh/
+**/*.pem
+**/*.key
+**/id_rsa*
+**/id_dsa*
+**/*.ppk
+
