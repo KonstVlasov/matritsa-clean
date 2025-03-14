@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Главная страница -->
+    <url>
+        <loc>https://matritsa-taro.ru/</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Страница входа -->
+    <url>
+        <loc>https://matritsa-taro.ru/login</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Результаты расчета матрицы судьбы (общая страница) -->
+    <url>
+        <loc>https://matritsa-taro.ru/matrix-result</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Типы матриц -->
+    <url>
+        <loc>https://matritsa-taro.ru/?matrix-type=personal#matrix</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/?matrix-type=relation#matrix</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/?matrix-type=finances#matrix</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/?matrix-type=childish#matrix</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Типы раскладов Таро -->
+    <url>
+        <loc>https://matritsa-taro.ru/?taro-type=classic#taro</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/?taro-type=three-cards#taro</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/?taro-type=yes-no#taro</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Результаты расклада Таро (общая страница) -->
+    <url>
+        <loc>https://matritsa-taro.ru/taro-result</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Документы -->
+    <url>
+        <loc>https://matritsa-taro.ru/public/docs/privacy-policy.pdf</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/public/docs/public-offer.pdf</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/public/docs/persona-data-processing.pdf</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Страница "Как это работает" -->
+    <url>
+        <loc>https://matritsa-taro.ru/#how-it-works</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Информация о картах Таро -->
+    <url>
+        <loc>https://matritsa-taro.ru/#about-taro</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Страница покупок -->
+    <url>
+        <loc>https://matritsa-taro.ru/#pricing</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Блог (главная страница блога) -->
+    <url>
+        <loc>https://matritsa-taro.ru/#blog</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Для примера добавлены несколько статей блога -->
+    <!-- Когда появятся реальные статьи, добавьте их сюда -->
+    <url>
+        <loc>https://matritsa-taro.ru/blog-post?post-id=1</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://matritsa-taro.ru/blog-post?post-id=2</loc>
+        <lastmod>2024-03-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>

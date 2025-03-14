@@ -1,0 +1,135 @@
+.chakraBlock {
+  overflow-x: auto;
+  display: flex;
+}
+
+.inner {
+  min-width: 280px;
+  min-height: 100px;
+  background: #fff;
+  border-radius: 20px;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.chakraRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.chakraHeader {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.chakraBody {
+  padding: 0;
+}
+
+.chakraFooter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.chakraItem {
+  width: 0;
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+
+.chakraItem:first-child {
+  /* @todo шапка таблицы немного неправильно по ширине */
+  flex-grow: 4;
+  text-align: left;
+}
+
+.chakraTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .chakraTitle {
+    font-size: 20px;
+  }
+}
+
+.chakraSubtitle {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+@media (min-width: 1024px) {
+  .chakraSubtitle {
+    font-size: 16px;
+  }
+}
+
+.chakraBody .chakraRow {
+  position: relative;
+  min-height: 72px;
+}
+
+.chakraBody .chakraRow:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 12px;
+  background: var(--chakra-color);
+}
+
+.chakraBody .chakraRow:nth-child(1) {
+  --chakra-color: #f6bcff;
+}
+
+.chakraBody .chakraRow:nth-child(2) {
+  --chakra-color: #c4c9ff;
+}
+
+.chakraBody .chakraRow:nth-child(3) {
+  --chakra-color: #b8f3ff;
+}
+
+.chakraBody .chakraRow:nth-child(4) {
+  --chakra-color: #d8ffb1;
+}
+
+.chakraBody .chakraRow:nth-child(5) {
+  --chakra-color: #fffbb7;
+}
+
+.chakraBody .chakraRow:nth-child(6) {
+  --chakra-color: #ffb778;
+}
+
+.chakraBody .chakraRow:nth-child(7) {
+  --chakra-color: #ffb1a3;
+}
+
+.chakraBody .chakraRow:nth-child(odd) {
+  background: #dfe1f2;
+}
+
+.value {
+  border-radius: 99999px;
+  background: #dfe1f2;
+  font-size: 20px;
+  line-height: 1;
+  padding: 8px;
+  min-height: 32px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.chakraBody .chakraRow:nth-child(odd) .value {
+  background: #fff;
+}

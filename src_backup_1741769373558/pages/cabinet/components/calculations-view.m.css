@@ -1,0 +1,45 @@
+.item {
+  position: relative;
+  border-radius: 8px;
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 1024px) {
+  .item {
+    font-size: 20px;
+  }
+}
+
+.itemLink {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.itemTitle {
+  font-weight: 600;
+}
+
+.itemSubtitle {
+  font-weight: 500;
+}
+
+.stub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}

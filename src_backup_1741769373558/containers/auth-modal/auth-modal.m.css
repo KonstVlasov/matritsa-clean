@@ -1,0 +1,52 @@
+.modal {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    max-width: 480px;
+    min-height: 512px;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.tab {
+  min-width: 120px;
+}
+
+.title {
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.input {
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px #ddd;
+}
+
+.input:focus {
+  box-shadow: inset 0 0 0 1px #5f6682;
+}
+
+.error {
+  padding: 16px;
+  background: rgb(255, 198, 198);
+  border-radius: 8px;
+}
+
+.submit {
+  flex-shrink: 0;
+  margin-top: auto;
+}

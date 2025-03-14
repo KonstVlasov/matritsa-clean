@@ -1,0 +1,51 @@
+User-agent: *
+Allow: /
+Allow: /public/
+Allow: /static/
+
+# Запрет на индексирование административных страниц
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /install/
+
+# Запрет на индексирование временных страниц
+Disallow: /tmp/
+
+# Запрет на индексирование служебных файлов
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.svg$
+Disallow: /*.xml$
+# Разрешаем sitemap.xml
+Allow: /sitemap.xml
+
+# Специфические правила для различных ботов
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+Disallow: /login
+Disallow: /register
+Disallow: /profile
+Disallow: /user/
+
+# Указание файла sitemap
+Sitemap: https://matritsa-taro.ru/sitemap.xml
+
+# Указание хоста (для Яндекса)
+Host: matritsa-taro.ru
+
+# Правила для обработки изображений
+User-agent: Googlebot-Image
+Allow: /public/images/
+Allow: /static/
+
+User-agent: YandexImages
+Allow: /public/images/
+Allow: /static/
+
+# Правило для скорости обхода (для Яндекса)
+Crawl-delay: 1

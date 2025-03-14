@@ -1,0 +1,21 @@
+.spinner {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 4px solid #000;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation-duration: 500ms;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,179 @@
+.section {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* background: #d5d7e9; */
+  color: #242a49;
+  --hero-section-padding-top: 0px;
+  padding-top: var(--hero-section-padding-top, 0px);
+}
+
+@media (min-width: 1024px) {
+  .section {
+    --hero-section-padding-top: 36px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section {
+    --hero-section-padding-top: 80px;
+  }
+}
+
+/* ========== */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    max-width: 784px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .layout {
+    max-width: 1200px;
+    flex-direction: row;
+  }
+}
+
+/* ========== */
+
+.block {
+  position: relative;
+  border-radius: 20px;
+  background: #dbddef;
+  height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .block {
+    height: 598px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .block {
+    width: 0;
+    flex-grow: 1;
+  }
+}
+
+/* ========== */
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+/* ========== */
+
+.button {
+  z-index: 2;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 20px;
+  --button-icon-gutter: 16px;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    padding: 0 40px;
+    height: 52px;
+    font-size: 24px;
+    --button-icon-gutter: 20px;
+  }
+}
+
+/* ========== */
+
+.decor {
+  position: absolute;
+  top: -600px;
+  bottom: -600px;
+  padding-top: calc(600px + var(--hero-section-padding-top, 0px));
+  padding-bottom: 600px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  transition:
+    opacity 500ms,
+    transform 500ms;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.blockMatrix:hover ~ .decorMatrix {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.blockTaro:hover ~ .decorTaro {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ========== */
+
+.blockDecor,
+.blockStub {
+  position: relative;
+  /* box-shadow: inset 0 0 0 2px red; */
+}
+
+.blockDecor,
+.blockStub {
+  height: 272px;
+}
+
+@media (min-width: 1024px) {
+  .blockDecor,
+  .blockStub {
+    height: 598px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .blockDecor,
+  .blockStub {
+    width: 0;
+    flex-grow: 1;
+  }
+}
+
+/* ========== */
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  pointer-events: none;
+  user-select: none;
+}
+
+.decorMatrix .image {
+  left: 42%;
+  top: 19%;
+}
+
+.decorTaro .image {
+  left: 60%;
+  top: 65%;
+}

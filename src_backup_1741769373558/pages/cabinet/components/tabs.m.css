@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.tab {
+  height: 40px;
+  border-radius: 99999px;
+  color: #5f6682;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.tab:hover {
+  cursor: pointer;
+  background: #b9bbcf;
+  color: #fff;
+}
+
+.tabChecked {
+  background: #b9bbcf;
+  color: #fff;
+}

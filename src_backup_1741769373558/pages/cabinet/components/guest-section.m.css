@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  color: #242a49;
+  min-height: 60vh;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message {
+  font-size: 18px;
+  text-align: center;
+}

@@ -1,0 +1,117 @@
+.section {
+  background: #d5d7e9;
+  padding: 56px 24px;
+  color: #242a49;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 80px 84px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section {
+    padding: 96px 220px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .section {
+    padding: 96px 360px;
+    padding-bottom: 0;
+  }
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.block {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .block {
+    width: auto;
+  }
+  .block:first-child {
+    flex-shrink: 0;
+  }
+}
+
+.title {
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  font-size: 36px;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 64px;
+  }
+}
+
+.image {
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 304px;
+}
+
+@media (min-width: 1024px) {
+  .image {
+    width: 443px;
+    margin-top: 44px;
+  }
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #242a49;
+}
+
+.info {
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .info {
+    font-size: 32px;
+  }
+}
+
+.button {
+  margin-top: 24px;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    margin-top: 36px;
+    padding: 0 40px;
+    height: 52px;
+    font-size: 24px;
+  }
+}

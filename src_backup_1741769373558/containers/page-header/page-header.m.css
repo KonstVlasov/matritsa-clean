@@ -1,0 +1,22 @@
+@media (max-width: 1023px) {
+  .pageHeader {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pageNavBar {
+    display: none;
+  }
+}
+
+.userButton {
+  min-width: 178px;
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  background: #000;
+  opacity: 0.16;
+}

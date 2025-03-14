@@ -1,0 +1,169 @@
+.root {
+  flex-grow: 1;
+  background: #d5d7e9;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #242a49;
+}
+
+.container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .cardsSection {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .secondarySection {
+    grid-column: 2 / 3;
+  }
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.cardsBlock {
+  padding: 20px;
+  background: #dfe1f2;
+  border-radius: 20px;
+  aspect-ratio: 6 / 5;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  /* высота шапки + отступы по 20 */
+  max-height: calc(100vh - 80px - 40px);
+  position: relative;
+}
+
+.cardsView {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  right: 32px;
+  bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+  .cardsBlock {
+    aspect-ratio: 1;
+  }
+}
+
+.descriptionBlock {
+  background: #dfe1f2;
+  border-radius: 20px;
+  padding: 32px 24px;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.offerBlock {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #242a49;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .offerBlock {
+    padding: 32px;
+    gap: 24px;
+    font-size: 32px;
+  }
+}
+
+/* ========================================================================== */
+
+.TaroCardsView {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: var(--taro-cards-view-gap, 0px);
+}
+
+.cardRows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--taro-cards-view-gap, 0px);
+}
+
+.cardRow {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--taro-cards-view-gap, 0px);
+}
+
+/* ========================================================================== */
+
+.cardInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cardInfo {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.cardInfoTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cardInfoText {
+  line-height: 1.2;
+}

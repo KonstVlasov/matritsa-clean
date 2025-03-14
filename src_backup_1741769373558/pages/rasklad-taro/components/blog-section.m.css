@@ -1,0 +1,172 @@
+.section {
+  padding: 56px 20px;
+  color: #fff;
+  background: #5f6682;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 80px 0;
+  }
+}
+
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    max-width: 792px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .layout {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .layout {
+    max-width: 1680px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    margin-bottom: 32px;
+    font-size: 64px;
+  }
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  --posts-gap: 24px;
+  gap: var(--posts-gap);
+}
+
+@media (max-width: 1023px) {
+  .posts > .post:not(:first-child) {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .posts > .post:not(:nth-child(-n + 2)) {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .posts > .post:not(:nth-child(-n + 3)) {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .posts {
+    --posts-gap: 32px;
+  }
+  .posts > .post:not(:nth-child(-n + 4)) {
+    display: none;
+  }
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .post {
+    width: calc(50% - var(--posts-gap));
+  }
+}
+
+@media (min-width: 1440px) {
+  .post {
+    width: calc((100% - (2 * var(--posts-gap))) / 3);
+  }
+}
+
+@media (min-width: 1920px) {
+  .post {
+    width: calc((100% - (3 * var(--posts-gap))) / 4);
+  }
+}
+
+.postImage {
+  width: 100%;
+  aspect-ratio: 350 / 175;
+}
+
+.loading .postImage {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.postTitle {
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.2;
+  height: calc(1.2em * 2);
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.loading .postTitle {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.postExcerpt {
+  width: 100%;
+  line-height: 1.25;
+  font-size: 16px;
+  height: calc(1.25em * 3);
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.loading .postExcerpt {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.postLink {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .postLink {
+    padding: 0 40px;
+    height: 52px;
+    font-size: 24px;
+  }
+}
+
+.loading .postLink {
+  color: transparent;
+  background: rgba(255, 255, 255, 0.24);
+}

@@ -1,0 +1,83 @@
+.root {
+  width: var(--destiny-matrix-w, 480px);
+  height: var(--destiny-matrix-h, 480px);
+  /* box-shadow: inset 0 0 0 1px red; */
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.rect {
+  position: absolute;
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+.rect:first-child {
+  transform: rotate(45deg);
+}
+
+.circle {
+  position: absolute;
+  background: #fff;
+  box-shadow: inset 0 0 0 var(--destiny-matrix-stroke-w, 2px) #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.circle-yellow {
+  background: rgb(255, 242, 59);
+  box-shadow: none;
+}
+
+.circle-green {
+  background: rgb(189, 238, 82);
+  box-shadow: none;
+}
+
+.circle-purple {
+  background: rgb(144, 43, 144);
+  color: #fff;
+  box-shadow: none;
+}
+
+.circle-blue {
+  background: rgb(62, 62, 220);
+  color: #fff;
+  box-shadow: none;
+}
+
+.circle-turquoise {
+  background: rgb(62, 212, 220);
+  color: #fff;
+  box-shadow: none;
+}
+
+.circle-orange {
+  background: rgb(255, 168, 82);
+  box-shadow: none;
+}
+
+.circle-red {
+  background: rgb(255, 58, 58);
+  color: #fff;
+  box-shadow: none;
+}
+
+.svg {
+  position: absolute;
+}

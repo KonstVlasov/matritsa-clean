@@ -1,0 +1,53 @@
+.opener {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.opener:hover {
+  cursor: pointer;
+}
+
+.openerIcon {
+  display: block;
+}
+
+.menuOpen .openerIcon {
+  transform: rotate(180deg);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 24px 32px rgba(0, 0, 0, 0.2);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  z-index: 10;
+  animation-name: reveal;
+  animation-duration: 200ms;
+}
+
+.menuItem {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.menuItem:hover {
+  cursor: pointer;
+  background: #f5f5f5;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

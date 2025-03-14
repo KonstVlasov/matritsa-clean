@@ -1,0 +1,25 @@
+.modal {
+  padding: 56px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icon {
+  margin-top: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.message {
+  margin-top: 4px;
+}
+
+.button {
+  margin-top: 16px;
+}

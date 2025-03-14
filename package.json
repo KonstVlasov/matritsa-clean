@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.11",
+    "glob": "^7.2.0",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^6.0.0"
+  },
+  "scripts": {
+    "compress-images": "node compress-images.js",
+    "convert-to-webp": "node convert-to-webp.js",
+    "replace-image-extensions": "node replace-image-extensions.js",
+    "replace-image-extensions-site": "node replace-image-extensions-site.js",
+    "build": "cd u2865078/data/www/app/frontend && npm run build"
+  }
+}

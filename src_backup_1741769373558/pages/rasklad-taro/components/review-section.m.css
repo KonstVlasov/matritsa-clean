@@ -1,0 +1,127 @@
+.section {
+  background: #d5d7e9;
+  padding: 56px 36px;
+  color: #242a49;
+}
+
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 680px;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    max-width: 886px;
+    min-height: 240px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .layout {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .layout {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1680px;
+  }
+}
+
+.reviews {
+  position: relative;
+}
+
+.arrow {
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transition: opacity 0.2s;
+}
+
+.arrow:not(:hover) {
+  opacity: 0.75;
+}
+
+.arrow > svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  color: #5f6682;
+}
+
+@media (min-width: 1024px) {
+  .arrow > svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.arrow.backward svg {
+  transform: rotate(180deg);
+}
+
+.arrow.backward {
+  right: calc(100% + 10px);
+}
+
+.arrow.forward {
+  left: calc(100% + 10px);
+}
+
+@media (min-width: 1024px) {
+  .arrow.backward {
+    right: calc(100% + 24px);
+  }
+
+  .arrow.forward {
+    left: calc(100% + 24px);
+  }
+}
+
+.review {
+  --count: 1;
+  --gaps-width: calc(24px * (var(--count) - 1));
+  width: calc((100% - var(--gaps-width)) / var(--count));
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+}
+
+@media (min-width: 1024px) {
+  .review {
+    --count: 3;
+  }
+}
+
+.reviewStars svg {
+  color: #6280fe;
+}
+
+.reviewTitle {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reviewContent {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* .review:nth-child(2) {
+  width: 200px;
+}
+
+.review:nth-child(3) {
+  width: 100px;
+}
+
+.review:nth-child(4) {
+  width: 500px;
+} */

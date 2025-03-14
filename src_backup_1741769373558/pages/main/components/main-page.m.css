@@ -1,0 +1,12 @@
+.bg {
+  background-image: url(../../../images/landing-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1024px) {
+  .logoSection {
+    display: none;
+  }
+}

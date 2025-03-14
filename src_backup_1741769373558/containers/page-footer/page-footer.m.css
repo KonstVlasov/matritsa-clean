@@ -1,0 +1,18 @@
+.slogan {
+  margin-top: 8px;
+  line-height: 1.25;
+}
+
+@media (min-width: 1024px) {
+  .slogan {
+    margin-top: 24px;
+  }
+}
+
+.links {
+  margin-top: 24px;
+}
+
+.link.underlined {
+  text-decoration: underline;
+}

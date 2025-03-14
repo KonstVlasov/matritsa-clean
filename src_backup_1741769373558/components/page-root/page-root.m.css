@@ -1,0 +1,16 @@
+.root {
+  min-height: 100vh;
+  background: #d5d7e9;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .root {
+    /* высота PageHeader */
+    padding-top: 80px;
+  }
+}

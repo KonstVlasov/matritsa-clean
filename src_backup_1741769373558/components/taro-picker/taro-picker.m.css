@@ -1,0 +1,68 @@
+.root {
+  width: var(--taro-picker-w, 640px);
+  height: var(--taro-picker-h, 480px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  touch-action: pan-y;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  transition:
+    transform 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+
+.root.disabled {
+  pointer-events: none;
+  transform: scale(0.94);
+  opacity: 0.4;
+}
+
+.fan {
+  position: relative;
+  /* box-shadow: inset 0 0 0 1px red; */
+}
+
+.confirm {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  backface-visibility: hidden;
+  position: absolute;
+  width: var(--taro-picker-card-w);
+  height: var(--taro-picker-card-h);
+  border-radius: calc(min(var(--taro-picker-card-w), var(--taro-picker-card-h)) * 0.1);
+  box-shadow: 0 0 calc(min(var(--taro-picker-card-w), var(--taro-picker-card-h)) * 0.075)
+    rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition:
+    transform 300ms,
+    top 300ms,
+    left 300ms;
+  cursor: pointer;
+
+  left: 100%;
+  top: calc(-1 * (var(--taro-picker-card-h) / 2));
+  transform: rotate(90deg);
+  background-image: url(../../images/card-back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.line {
+  left: var(--taro-picker-center-x);
+  top: var(--taro-picker-center-y);
+  position: absolute;
+  height: 1px;
+  transform-origin: 0 center;
+  transition:
+    transform 200ms,
+    width 300ms ease-in;
+}

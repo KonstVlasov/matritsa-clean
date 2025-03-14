@@ -1,0 +1,42 @@
+.PickedCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: inset 0 0 0 1px blue; */
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.place {
+  position: relative;
+  /* box-shadow: inset 0 0 0 1px green; */
+  width: var(--taro-card-w);
+  height: var(--taro-card-h);
+  border-radius: 8px;
+}
+
+.pickedCard {
+  position: static;
+  transition: none;
+  z-index: 10;
+}
+
+.placeTitle {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 24px;
+  top: calc(100% + 4px);
+  left: 0;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

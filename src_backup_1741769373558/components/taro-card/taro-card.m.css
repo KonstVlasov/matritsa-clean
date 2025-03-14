@@ -1,0 +1,19 @@
+.TaroCard {
+  flex-shrink: 0;
+  width: var(--taro-card-w, 70px);
+  height: var(--taro-card-h, 120px);
+  border-radius: var(--taro-card-r, 0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.cardImage {
+  display: block;
+  width: calc(var(--taro-card-w, 70px) - (2 * var(--taro-card-b, 0px)));
+  height: calc(var(--taro-card-h, 120px) - (2 * var(--taro-card-b, 0px)));
+  user-select: none;
+  pointer-events: none;
+}

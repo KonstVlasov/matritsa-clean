@@ -1,0 +1,161 @@
+.section {
+  background: #f4f5f9;
+  color: #242a49;
+  padding: 56px 20px;
+}
+
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .layout {
+    max-width: 1200px;
+  }
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.column {
+  width: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* height: 640px; */
+}
+
+.blockHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blockTitle {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+  .blockTitle {
+    font-size: 36px;
+  }
+}
+
+.message {
+  font-size: 18px;
+}
+
+@media (min-width: 1024px) {
+  .message {
+    font-size: 24px;
+  }
+}
+
+.textarea {
+  border-radius: 20px;
+  resize: none;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.cardPicker {
+  position: relative;
+  padding: 16px;
+  background: #e6e8f0;
+  border-radius: 20px;
+  aspect-ratio: 35 / 28;
+}
+
+@media (min-width: 1024px) {
+  .cardPicker {
+    padding: 32px;
+  }
+}
+
+.taroPicker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  --taro-picker-w: 100%;
+  --taro-picker-h: 100%;
+}
+
+@media (min-width: 1440px) {
+  .cardPicker {
+    flex-grow: 1;
+  }
+}
+
+.pickedCards {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  background: #e6e8f0;
+  border-radius: 20px;
+  aspect-ratio: 35 / 16;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .pickedCards {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pickedCards {
+    flex-grow: 1;
+  }
+}
+
+.button {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    padding: 0 140px;
+    height: 52px;
+    font-size: 24px;
+  }
+}
+
+.hiddenInput {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,91 @@
+.button {
+  border-radius: 99999px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.size36 {
+  padding: 0 16px;
+  font-size: 16px;
+  height: 36px;
+  --button-icon-gutter: 8px;
+}
+
+.size40 {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 20px;
+  --button-icon-gutter: 16px;
+}
+
+.size52 {
+  padding: 0 40px;
+  height: 52px;
+  font-size: 24px;
+  --button-icon-gutter: 20px;
+}
+
+.size56 {
+  padding: 0 40px;
+  height: 56px;
+  font-size: 24px;
+  --button-icon-gutter: 20px;
+}
+
+.icon {
+  display: block;
+  margin-left: var(--button-icon-gutter, 8px);
+  stroke: currentColor;
+}
+
+.color-6280fe {
+  --button-color: #6280fe;
+  --button-hover-color: #a2b4ff;
+}
+
+.color-a2b4ff {
+  --button-color: #a2b4ff;
+}
+
+.color-242a49 {
+  --button-color: #242a49;
+}
+
+.color-e6e8f0 {
+  --button-color: #e6e8f0;
+  --button-text-color: #242a49;
+}
+
+.color-fff {
+  --button-color: #fff;
+  --button-hover-color: #eee;
+  --button-text-color: #242a49;
+}
+
+.coloring-fill {
+  background: var(--button-color, #000);
+  color: var(--button-text-color, #fff);
+}
+
+.coloring-fill:hover {
+  background: var(--button-hover-color, var(--button-color, #000));
+}
+
+.coloring-outline {
+  background: transparent;
+  color: var(--button-text-color, var(--button-color, #000));
+  box-shadow: inset 0 0 0 2px var(--button-color, #000);
+}

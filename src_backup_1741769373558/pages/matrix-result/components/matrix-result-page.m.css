@@ -1,0 +1,154 @@
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #242a49;
+  background: #d5d7e9;
+  flex-grow: 1;
+}
+
+.container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* ========================================================================== */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ========================================================================== */
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* ========================================================================== */
+
+.matrixBlock {
+  position: relative;
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --destiny-matrix-w: calc(100% - 32px);
+  --destiny-matrix-h: calc(100% - 32px);
+}
+
+@media (min-width: 1024px) {
+  .matrixBlock {
+    border-radius: 32px;
+  }
+}
+
+/* ========================================================================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.gridItem {
+  display: block;
+}
+
+/* ========================================================================== */
+
+@media (min-width: 1024px) {
+  .gridPersonal .gridItemExtras {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+  .gridPersonal .gridItemDetails {
+    grid-column: 1 / 3;
+    grid-row: 4;
+  }
+}
+
+/* ========================================================================== */
+
+@media (min-width: 1024px) {
+  .gridFinances .gridItemDetails {
+    grid-column: 2 / 3;
+  }
+}
+
+/* ========================================================================== */
+
+@media (min-width: 1024px) {
+  .gridChildish .gridItemDetails {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+  .gridChildish .gridItemExtras {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+}
+
+/* ========================================================================== */
+
+@media (min-width: 1024px) {
+  .gridRelation .gridItemDetails {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+  .gridRelation .gridItemExtras {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+}
+
+/* ========================================================================== */
+
+.bubbles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 12px;
+}
+
+.bubble {
+  padding: 8px 20px;
+  background: #e6e8f0;
+  color: #242a49;
+  border-radius: 99999px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .bubble {
+    font-size: 20px;
+    max-width: 1200px;
+  }
+}

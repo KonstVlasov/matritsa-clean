@@ -1,0 +1,94 @@
+Return-path: <>
+Envelope-to: info@matritsa-taro.ru
+Delivery-date: Wed, 19 Feb 2025 04:32:51 +0300
+Received: from exim
+	by server111.hosting.reg.ru with local  
+	id 1tkYxH-00000000meP-1A59
+	for info@matritsa-taro.ru;
+	Wed, 19 Feb 2025 04:32:51 +0300
+X-Failed-Recipients: qweqweqweqweq@qweqweqweqweq.ru
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server111.hosting.reg.ru>
+To: info@matritsa-taro.ru
+References: <20481d939988a2b2c22b9b72012897e9@matritsa-taro.ru>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1739928771-eximdsn-2044600207
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1tkYxH-00000000meP-1A59@server111.hosting.reg.ru>
+Date: Wed, 19 Feb 2025 04:32:51 +0300
+
+--1739928771-eximdsn-2044600207
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  qweqweqweqweq@qweqweqweqweq.ru
+    Unrouteable address
+
+--1739928771-eximdsn-2044600207
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server111.hosting.reg.ru
+
+Action: failed
+Final-Recipient: rfc822;qweqweqweqweq@qweqweqweqweq.ru
+Status: 5.0.0
+
+--1739928771-eximdsn-2044600207
+Content-type: message/rfc822
+
+Return-path: <info@matritsa-taro.ru>
+Received: from mail.hosting.reg.ru ([31.31.194.65])
+	by server111.hosting.reg.ru with esmtp  
+	(envelope-from <info@matritsa-taro.ru>)
+	id 1tkYxH-00000000meB-0naJ
+	for qweqweqweqweq@qweqweqweqweq.ru;
+	Wed, 19 Feb 2025 04:32:51 +0300
+From: matrix-numerology robot <info@matritsa-taro.ru>
+To: qweqweqweqweq@qweqweqweqweq.ru
+Subject: =?utf-8?Q?=D0=A0=D0=B5=D0=B3=D0=B8=D1=81=D1=82=D1=80=D0=B0?=
+ =?utf-8?Q?=D1=86=D0=B8=D1=8F_=D0=BD=D0=B0_=D1=81=D0=B0=D0=B9=D1=82=D0=B5?=
+ =?utf-8?Q?matrix-numerology?=
+Message-ID: <20481d939988a2b2c22b9b72012897e9@matritsa-taro.ru>
+MIME-Version: 1.0
+Date: Wed, 19 Feb 2025 04:32:51 +0300
+Content-Type: multipart/alternative; boundary=yLlnaS98
+
+--yLlnaS98
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello qweqweqweqweq@qweqweqweqweq.ru,
+
+
+--yLlnaS98
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Email: qweqweqweqweq@qweqweqweqwe=
+q.ru,</p>
+    <p>=D0=9F=D0=B0=D1=80=D0=BE=D0=BB=D1=8C qweqweqweqweq,</p>=
+
+</div>
+    </body>
+</html>
+
+--yLlnaS98--
+
+
+--1739928771-eximdsn-2044600207--

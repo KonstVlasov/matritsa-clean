@@ -1,0 +1,26 @@
+.input {
+  border-radius: 99999px;
+  background: #fff;
+  height: 40px;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+.input::placeholder {
+  color: #bebebe;
+}
+
+.input:disabled,
+.input:read-only {
+  color: #777;
+}
+
+.size-s {
+  height: 40px;
+  font-size: 18px;
+}
+
+.size-m {
+  height: 56px;
+  font-size: 18px;
+}

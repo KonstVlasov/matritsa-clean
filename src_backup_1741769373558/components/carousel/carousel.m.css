@@ -1,0 +1,21 @@
+.root {
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  transition: transform 0.2s ease-out;
+}
+
+.container > * {
+  flex-shrink: 0;
+}
+
+.button {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+PHP_INI_SCAN_DIR='/var/www/u2865078/data/php-bin-regru-php82/matritsa-taro.ru:'
+PHPRC='/var/www/u2865078/data/php-bin-regru-php82'
+export PHP_INI_SCAN_DIR
+export PHPRC
+exec /opt/php/8.2/bin/php-cgi

@@ -1,0 +1,101 @@
+Return-path: <>
+Envelope-to: info@matritsa-taro.ru
+Delivery-date: Sat, 09 Nov 2024 22:37:30 +0300
+Received: from exim by server111.hosting.reg.ru with local (Exim 4.97.1)
+	id 1t9rH0-0000000089g-0xCg
+	for info@matritsa-taro.ru;
+	Sat, 09 Nov 2024 22:37:30 +0300
+X-Failed-Recipients: admin@gmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server111.hosting.reg.ru>
+To: info@matritsa-taro.ru
+References: <b209508d8f6c6bb56254f79c004d3b47@example.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1731181050-eximdsn-507324603
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1t9rH0-0000000089g-0xCg@server111.hosting.reg.ru>
+Date: Sat, 09 Nov 2024 22:37:30 +0300
+
+--1731181050-eximdsn-507324603
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  admin@gmail.com
+    host gmail-smtp-in.l.google.com [64.233.162.26]
+    SMTP error from remote mail server after RCPT TO:<admin@gmail.com>:
+    550-5.1.1 The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. For more information, go to
+    550 5.1.1  https://support.google.com/mail/?p=NoSuchUser 2adb3069b0e04-53d8c1cb0edsi798770e87.242 - gsmtp
+
+--1731181050-eximdsn-507324603
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server111.hosting.reg.ru
+
+Action: failed
+Final-Recipient: rfc822;admin@gmail.com
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. For more information, go to
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser 2adb3069b0e04-53d8c1cb0edsi798770e87.242 - gsmtp
+
+--1731181050-eximdsn-507324603
+Content-type: message/rfc822
+
+Return-path: <info@matritsa-taro.ru>
+Received: from u2865078 by server111.hosting.reg.ru with local (Exim 4.97.1)
+	(envelope-from <info@matritsa-taro.ru>)
+	id 1t9rH0-0000000089C-095e
+	for admin@gmail.com;
+	Sat, 09 Nov 2024 22:37:30 +0300
+From: matrix-numerology robot <support@example.com>
+To: admin@gmail.com
+Subject: =?utf-8?Q?=D0=A0=D0=B5=D0=B3=D0=B8=D1=81=D1=82=D1=80=D0=B0?=
+ =?utf-8?Q?=D1=86=D0=B8=D1=8F_=D0=BD=D0=B0_=D1=81=D0=B0=D0=B9=D1=82=D0=B5?=
+ matrix-numerology
+Message-ID: <b209508d8f6c6bb56254f79c004d3b47@example.com>
+MIME-Version: 1.0
+Date: Sat, 09 Nov 2024 22:37:30 +0300
+Content-Type: multipart/alternative; boundary=wRPUIgRC
+
+--wRPUIgRC
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello admin@gmail.com,
+
+
+--wRPUIgRC
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Email: admin@gmail.com,</p>
+   =
+ <p>=D0=9F=D0=B0=D1=80=D0=BE=D0=BB=D1=8C 123456,</p>
+</div>
+    </body>=
+
+</html>
+
+--wRPUIgRC--
+
+--1731181050-eximdsn-507324603--

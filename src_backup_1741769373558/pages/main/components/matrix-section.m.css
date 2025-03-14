@@ -1,0 +1,177 @@
+.section {
+  padding: 64px 20px;
+  background: #f4f5f9;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 64px 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section {
+    padding: 64px 120px;
+  }
+}
+
+.inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 1440px) {
+  .inner {
+    flex-direction: row;
+  }
+}
+
+.imageBlock {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  aspect-ratio: 35 / 24;
+  --block-padding: 20px;
+}
+
+.imageBlock > img {
+  display: block;
+  position: absolute;
+  top: var(--block-padding);
+  left: var(--block-padding);
+  width: calc(100% - (var(--block-padding) * 2));
+  height: calc(100% - (var(--block-padding) * 2));
+  object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  .imageBlock {
+    --block-padding: 48px;
+    aspect-ratio: 35 / 32;
+    border-radius: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .imageBlock,
+  .mainBlock {
+    width: 0;
+    flex-grow: 1;
+  }
+}
+
+.imageBlock img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .mainBlock {
+    gap: 32px;
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #242a49;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 64px;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tab {
+  padding: 0 16px;
+  font-size: 16px;
+  height: 36px;
+}
+
+@media (min-width: 1024px) {
+  .tab {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+.formPlate {
+  background: #dbddef;
+  padding: 20px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-radius: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+}
+
+.sexField {
+  width: 100%;
+}
+
+.button {
+  padding: 0 16px;
+  font-size: 16px;
+  height: 36px;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+.decor {
+  display: flex;
+  gap: 24px;
+}
+
+.decor > * {
+  flex-grow: 1;
+  background: #dfe1f2;
+  border-radius: 99999px;
+  height: 32px;
+}
+
+.decor > *:first-child {
+  flex-grow: 0;
+  width: 78px;
+}
+
+@media (min-width: 1024px) {
+  .decor > * {
+    height: 56px;
+  }
+}

@@ -1,0 +1,74 @@
+.MatrixDetails {
+  background: #f4f5f9;
+  min-height: 100px;
+  border-radius: 20px;
+  font-size: 16px;
+  gap: 20px;
+  padding: 48px 32px;
+}
+
+@media (min-width: 1024px) {
+  .MatrixDetails {
+    border-radius: 32px;
+  }
+}
+
+.item + .item {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #dfe1f2;
+}
+
+details.item summary.itemSummary::-webkit-details-marker {
+  display: none;
+}
+
+.itemSummary {
+  cursor: pointer;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.itemTitle {
+  flex-grow: 1;
+}
+
+.itemArrow {
+  transition: transform 200ms;
+}
+
+.item[open] .itemArrow {
+  transform: rotate(-180deg);
+}
+
+.itemBody {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.itemBody p + p {
+  margin-top: 12px;
+}
+
+.itemAccess {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  .accessButton {
+    font-size: 16px;
+  }
+  .accessButton svg {
+    display: none;
+  }
+}

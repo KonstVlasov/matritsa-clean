@@ -1,0 +1,103 @@
+Return-path: <>
+Envelope-to: info@matritsa-taro.ru
+Delivery-date: Sat, 09 Nov 2024 22:43:50 +0300
+Received: from exim by server111.hosting.reg.ru with local (Exim 4.97.1)
+	id 1t9rN8-000000014IL-42HJ
+	for info@matritsa-taro.ru;
+	Sat, 09 Nov 2024 22:43:50 +0300
+X-Failed-Recipients: orangesanfire@gmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server111.hosting.reg.ru>
+To: info@matritsa-taro.ru
+References: <f505d0fd0520be3627d2d026afe5f568@example.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1731181430-eximdsn-1525503314
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1t9rN8-000000014IL-42HJ@server111.hosting.reg.ru>
+Date: Sat, 09 Nov 2024 22:43:50 +0300
+
+--1731181430-eximdsn-1525503314
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  orangesanfire@gmail.com
+    host gmail-smtp-in.l.google.com [64.233.162.27]
+    SMTP error from remote mail server after pipelined end of data:
+    550-5.7.26 Unauthenticated email from example.com is not accepted due to
+    550-5.7.26 domain's DMARC policy. Please contact the administrator of
+    550-5.7.26 example.com domain if this was a legitimate mail. To learn about the
+    550-5.7.26 DMARC initiative, go to
+    550 5.7.26  https://support.google.com/mail/?p=DmarcRejection 2adb3069b0e04-53d826b5e39si2563087e87.591 - gsmtp
+
+--1731181430-eximdsn-1525503314
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server111.hosting.reg.ru
+
+Action: failed
+Final-Recipient: rfc822;orangesanfire@gmail.com
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.7.26 Unauthenticated email from example.com is not accepted due to
+ 550-5.7.26 domain's DMARC policy. Please contact the administrator of
+ 550-5.7.26 example.com domain if this was a legitimate mail. To learn about the
+ 550-5.7.26 DMARC initiative, go to
+ 550 5.7.26  https://support.google.com/mail/?p=DmarcRejection 2adb3069b0e04-53d826b5e39si2563087e87.591 - gsmtp
+
+--1731181430-eximdsn-1525503314
+Content-type: message/rfc822
+
+Return-path: <info@matritsa-taro.ru>
+Received: from u2865078 by server111.hosting.reg.ru with local (Exim 4.97.1)
+	(envelope-from <info@matritsa-taro.ru>)
+	id 1t9rN8-000000014HJ-27IS
+	for orangesanfire@gmail.com;
+	Sat, 09 Nov 2024 22:43:50 +0300
+From: matrix-numerology robot <support@example.com>
+To: orangesanfire@gmail.com
+Subject: =?utf-8?Q?=D0=A0=D0=B5=D0=B3=D0=B8=D1=81=D1=82=D1=80=D0=B0?=
+ =?utf-8?Q?=D1=86=D0=B8=D1=8F_=D0=BD=D0=B0_=D1=81=D0=B0=D0=B9=D1=82=D0=B5?=
+ matrix-numerology
+Message-ID: <f505d0fd0520be3627d2d026afe5f568@example.com>
+MIME-Version: 1.0
+Date: Sat, 09 Nov 2024 22:43:50 +0300
+Content-Type: multipart/alternative; boundary=8kV77B69
+
+--8kV77B69
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello admin@gmail.com,
+
+
+--8kV77B69
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Email: admin@gmail.com,</p>
+   =
+ <p>=D0=9F=D0=B0=D1=80=D0=BE=D0=BB=D1=8C 123456,</p>
+</div>
+    </body>=
+
+</html>
+
+--8kV77B69--
+
+--1731181430-eximdsn-1525503314--

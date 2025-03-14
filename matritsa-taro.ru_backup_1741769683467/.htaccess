@@ -1,0 +1,29 @@
+# Включаем модуль переписывания
+RewriteEngine On
+
+# Редирект с www на без www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Редирект с http на https 
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Обработка SPA путей (раскомментируйте, если нужно)
+# RewriteCond %{REQUEST_URI} ^/blog-post/ [NC]
+# RewriteRule ^blog-post/(.*)$ /blog-post/index.html [L]
+
+# Все остальные запросы перенаправляем на index.html (для SPA)
+# RewriteRule ^ index.html [L]
+
+
+# Запрет доступа к важным файлам
+<FilesMatch "^(\.htaccess|\.htpasswd|\.git|\.env|\.gitignore)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Установка правильного Content-Type для различных файлов
+AddType application/javascript .js
+AddType text/css .css
+AddType image/svg+xml .svg

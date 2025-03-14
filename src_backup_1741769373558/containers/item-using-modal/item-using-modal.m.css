@@ -1,0 +1,64 @@
+.modal {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    max-height: 640px;
+  }
+}
+
+.title {
+  margin-top: 24px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.message {
+  font-size: 18px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  padding: 12px;
+  box-shadow: inset 0 0 0 1px #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.itemSelected {
+  background: #6280fe;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px #6280fe;
+}
+
+.itemTitle {
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.error {
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 0, 0, 0.2);
+  color: #000;
+}
